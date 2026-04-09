@@ -74,20 +74,21 @@ body, html {
   gap: 15px;
 }
 
-/* Wrapper groter gemaakt */
+/* ❤️ Alleen HART groter */
 .progress-wrapper {
   position: relative;
-  width: 200px;
-  height: 230px;
+  width: 260px;   /* groter dan jouw oude 200 */
+  height: 300px;
 }
 
 /* SVG */
 .flower-svg {
   width: 100%;
   height: 100%;
+  pointer-events: none; /* 🔥 maakt NIET klikbaar */
 }
 
-/* GROTE PLAY BUTTON */
+/* Play knop (ongewijzigd) */
 #playBtn {
   position: absolute;
   top: 50%;
@@ -103,6 +104,7 @@ body, html {
   cursor: pointer;
   box-shadow: 0 0 8px rgba(255, 192, 203, 0.7);
   transition: all 0.3s ease;
+  z-index: 10;
 }
 
 #playBtn:hover {
@@ -140,13 +142,13 @@ body, html {
   }
 
   .progress-wrapper {
-    width: 140px;
-    height: 160px;
+    width: 180px;
+    height: 210px;
   }
 
   #playBtn {
-    width: 80px;
-    height: 80px;
-    font-size: 36px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
   }
 }

@@ -1,7 +1,6 @@
 const music = document.getElementById('music');
 const playBtn = document.getElementById('playBtn');
 const flowerProgress = document.getElementById('flowerProgress');
-const progressContainer = document.getElementById('progressContainer');
 const volume = document.getElementById('volume');
 const bg = document.getElementById('bg');
 
@@ -22,7 +21,7 @@ playBtn.addEventListener('click', () => {
     }
 });
 
-/* PROGRESS */
+/* PROGRESS (alleen visueel, niet klikbaar) */
 const pathLength = flowerProgress.getTotalLength();
 flowerProgress.style.strokeDasharray = pathLength;
 flowerProgress.style.strokeDashoffset = pathLength;
@@ -34,20 +33,12 @@ music.addEventListener('timeupdate', () => {
     }
 });
 
-/* CLICK TO SEEK */
-progressContainer.addEventListener('click', (e) => {
-    const rect = progressContainer.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const percent = x / rect.width;
-    music.currentTime = percent * music.duration;
-});
-
 /* VOLUME */
 volume.addEventListener('input', () => {
     music.volume = volume.value;
 });
 
-/* PARALLAX */
+/* PARALLAX ACHTERGROND */
 window.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
     bg.style.transform = `translateY(${scrollY * 0.12}px)`;
