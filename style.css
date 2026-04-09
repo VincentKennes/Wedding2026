@@ -68,6 +68,11 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+.card.sixth {
+  aspect-ratio: 4 / 1;
+  background-image: url("./nametag.png");
+  background-size: contain;
+}
 
 /* PLAYER INNER */
 .player {
