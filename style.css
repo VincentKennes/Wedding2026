@@ -210,18 +210,36 @@ html, body {
   background-size: contain;
 }
 
-.card.sixtheen {
-  aspect-ratio: 2 / 1;
-  background-image: url("./thank you.png");
-  background-size: contain;
-  margin-top: -40px;
-  margin-bottom: -40px;
+.advice-text {
+  text-align: center;
+  font-size: clamp(18px, 3vw, 26px);
+  letter-spacing: 2px;
+  color: #5a6b4f; /* soft green like your design */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
+.thankyou-text {
+  text-align: center;
+  font-size: clamp(18px, 3vw, 26px);
+  letter-spacing: 2px;
+  color: #5a6b4f; /* soft green like your design */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card.gift {
+  aspect-ratio: 2 / 1;
+  background-image: url("./card hint.png");
+  background-size: contain;
+   margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
 .card.zeventeen {
   aspect-ratio: 2 / 1;
   background-image: url("./we hope.png");
   background-size: contain;
+  margin-top: -20px;
+  margin-bottom: -200px;
 }
 
 /* PLAYER INNER */
